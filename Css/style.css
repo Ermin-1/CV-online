@@ -1,0 +1,264 @@
+/* Header */
+.header-content {
+    display: flex;
+    align-items: center;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+header p {
+    font-size: 40px;
+}
+
+
+.portrait {
+    margin-left: 25%; 
+    background-color: inherit; 
+    padding-left: 300px; 
+    
+}
+
+
+.portrait img {
+    border-radius: 20px; /* Lägg till rundade hörn */
+    width: 300px;
+    height: auto;
+}
+
+/* Kommentar: Anpassa sektionen för att vara i mitten */
+section {
+    padding: 20px; /* Justera padding vid behov */
+    background-color: rgb(247, 232, 213); /* Lägg till bakgrundsfärg */
+    border-radius: 8px; /* Lägg till rundade hörn */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Lägg till skugga */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Övriga befintliga regler */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.education,
+.experience {
+    margin-bottom: 20px;
+}
+
+.education h2,
+.experience h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 10px 10px 0;
+}
+
+.imagebot img {
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 450px;
+    height: auto;
+
+}
+
+
+/* ABOUT */
+
+#main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post header.major {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post header.major h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.post header.major p {
+    font-size: 18px;
+}
+
+.post .image.main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post .image.main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* NAV */
+#nav {
+    display: flex;
+    background: rgb(247, 232, 213); /* Använd samma bakgrundsfärg som sektioner */
+    height: 4rem;
+    line-height: 2.5rem;
+    margin: -4rem auto 0 auto;
+    overflow: hidden;
+    padding: 0 0.1rem 0 0;
+    position: relative;
+    width:min-content;
+    max-width: 72rem;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Lägg till skugga */
+    
+}
+
+#nav a {
+    color: #333; /* Använd samma textfärg som h2 */
+    border-bottom-color: rgba(247, 232, 213, 0.6); /* Använd samma bakgrundsfärg som sektioner */
+}
+
+#nav a:hover {
+    border-bottom-color: transparent;
+    color: #c0986b; /* Använd samma accentfärg som skills li */
+}
+
+#nav ul.links {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-transform: uppercase; 
+}
+
+#nav ul.links li {
+    display: block;
+    padding-left: 0;
+       border-radius: 8px;
+}
+
+#nav ul.links li a {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: block;
+    font-size: 0.8rem;
+    outline: none;
+    padding: 0 2rem;
+    
+}
+
+#nav ul.links li a:hover {
+    color: #7c6346;
+    background-color: rgba(255, 255, 255, 0.1); /* Använd samma bakgrundsfärg som skills li */
+    
+}
+
+#nav ul.links li.active {
+    background-color: #f1bd8134; /* Använd samma bakgrundsfärg som header */
+    
+}
+
+#nav ul.links li.active a {
+    color: #333; /* Använd samma textfärg som h2 */
+
+}
+
+#nav ul.links li.active a:hover {
+    color: #333;
+ 
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
