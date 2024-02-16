@@ -6,15 +6,14 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <header>
-        <!-- Dela upp headern innehåll i två delar med hjälp av flexbox -->
+    <header>->
         <div class="header-content">
-            <!-- Första delen innehåller namnet och titeln -->
             <div>
                 <h1>Ermin Husic</h1>
                 <p>System developer</p>
             </div>
-            <!-- Andra delen innehåller porträttbilden -->
+
+
             <div class="portrait">
                 <img src="Image/porträtt.jpg" alt="selfportrait" width="100">
             </div>
@@ -23,45 +22,68 @@
 
     <nav id="nav">
         <ul class="links">
-            <li class="active"><a href="index.html">General</a></li>
+            <li><a href="index.html">General</a></li>
             <li><a href="PersonligtBrev.html">About</a></li>
-            <li><a href="CV">CV</a></li>
-            <li><a href="Projekt">Projects</a></li>
-            <li><a href="Lorem">LoremIpsum</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li class="active"><a href="Projekt.html">Projects</a></li>
+            <li><a href="Lorem.html">LoremIpsum</a></li>
     </nav>
 
-    <div class="content">
-        <section>
-            <h2>Contact Information</h2>
-            <ul>
-                <li><strong>Email : </strong>ermin.husic@live.se</li>
-                <li><strong>Phone : </strong>+46734195731</li>
-                <li><strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/ermin-husic-a43864163/">Ermin Husic's LinkedIn</a></li>
-                <li><strong>Portfolio : </strong><a href="https://ermin-1.github.io/ErminHusic.github.io/">Ermin Husic's Portfolio</a></li>
+
+    <!-- Featured Post -->
+        <article class="post featured">
+            <header class="major">
+                <span class="date">Oktober 15, 2023</span>
+                <h2>Slutprojekt i första kursen<br />
+                - bankomaten -</a></h2>
+                <p>Första stora projektet vi byggde i första kursen (Utveckling med C# och .NET).
+                Kodades utan OOP för att få en uppfattning om hur krånglig koden kan bli utan klasser.  -> Alla bilder till projekten är generade med generativ AI - Firefly <-
+                </p>
+            </header>
+            <a href="https://github.com/Ermin-1/Bankomaten.git" class="image main"><img src="images/bankomaten.JPG" alt="" /></a>
+            <ul class="actions special">
+                <li><a href="https://github.com/Ermin-1/Bankomaten.git" class="button large">Visa projekt i github</a></li>
             </ul>
-            <div class="education">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>University of Campus Varberg</strong>- Bachelor's in Computer Sciences</li>
+        </article>
+
+    <!-- Posts -->
+        <section class="posts">
+            <article>
+                <header>
+                    <span class="date">September 24, 2023</span>
+                    <h2><a href="#">Numbers Game<br />
+                    
+                </header>
+                <a href="https://github.com/Ermin-1/NumbersGame.git" class="image fit"><img src="images/numbersgame.JPG" alt="" /></a>
+                <p>Första kursen. Enklare konsolspel där man ska gissa numret från 1-20.</p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/Ermin-1/NumbersGame.git" class="button">visa projekt i github</a></li>
                 </ul>
-            </div>
-            <div class="experience">
-                <h2>Work Experience</h2>
-                <ul>
-                    <li><strong>Lernia Bemanning</strong> - Consultant manager</li>
+            </article>
+            <article>
+                <header>
+                    <span class="date">Oktober 16, 2023</span>
+                    <h2><a href="https://github.com/Ermin-1/Djur-Labb2.git">djur : Klasser</a></h2>
+                </header>
+                <a href="https://github.com/Ermin-1/Djur-Labb2.git" class="image fit"><img src="images/klasser.JPG" alt="" /></a>
+                <p>Andra kursen: Första uppgiften inom klasser. Enklare konsolprogram där klasser ärver av varandra.</p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/Ermin-1/Djur-Labb2.git" class="button">Visa projekt i github</a></li>
                 </ul>
-            </div>
-            <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>C#</li>
-                    <li>SQL</li>
-                    <li>STAFF</li>
-                    <li>SALES</li>
-                    <li>CUSTOMER RELATIONSHIPS</li>
-                </ul>
-            </div>
+            </article>
+
         </section>
+
+
+
+        
+        <footer>
+            <div class="footer">
+                <p>&copy; 2024</p>
+            </div>
+
+        </footer>
+        
+    </div>
+</body>
+</html>
