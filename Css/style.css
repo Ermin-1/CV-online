@@ -1,3 +1,8 @@
+:focus {
+    outline: 2px solid blue; 
+}
+
+
 /* -------------- Header -------------------*/
 .header-content {
     display: flex;
@@ -6,9 +11,11 @@
 
 header {
     background-color: #333;
-    color: white;
+    color: rgb(247, 232, 213);
     text-align: left;
-    padding: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
 }
 
 header h1 {
@@ -20,39 +27,39 @@ header p {
 }
 
 .portrait {
-    margin-left: 25%; 
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 50px;
     background-color: inherit; 
-    padding-left: 300px; 
 }
 
 .portrait img {
-    border-radius: 20px; /* Lägg till rundade hörn */
+    border-radius: 20px; 
     width: 300px;
-    height: auto;
 }
 
-/* Kommentar: Anpassa sektionen för att vara i mitten */
+
+/* ------- Section ------ */
 section {
-    padding: 20px; /* Justera padding vid behov */
-    background-color: rgb(247, 232, 213); /* Lägg till bakgrundsfärg */
-    border-radius: 8px; /* Lägg till rundade hörn */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Lägg till skugga */
+    padding: 20px; 
+    background-color: rgb(247, 232, 213); 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     margin: 0 auto;
     max-width: 700px;
-    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 40px; 
 }
-
-
-
 
 /* -------------- Body -----------------*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
     margin: 0;
     padding: 0;
     overflow-y: scroll; 
+    
 }
 
 h2 {
@@ -103,17 +110,14 @@ li {
     height: auto;
 }
 
-
-
 /* --------------------- ABOUT -------------------- */
 .post {
     margin-bottom: 100px;
-    
 }
 
 .post header.major {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .post header.major h1 {
@@ -131,19 +135,13 @@ li {
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-
 /*-------------------- Footer ----------------- */
 footer {
     background-color: #333;
     color: white;
     display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
+    justify-content: center; 
+    align-items: center; 
     padding: 10px;
     position: fixed;
     left: 0;
@@ -151,35 +149,34 @@ footer {
     width: 100%;
 }
 
-
-
-
-
 /* ----------------  NAV  --------------------------*/
 #nav {
     display: flex;
-    background: rgb(247, 232, 213); /* Använd samma bakgrundsfärg som sektioner */
+    background: rgb(247, 232, 213); 
     height: 4rem;
     line-height: 2.5rem;
-    margin: -4rem auto 0 auto;
+    position: relative; 
+    top: 35px; 
+    margin: 0 auto; 
+    
     overflow: hidden;
     padding: 0 0.1rem 0 0;
-    position: relative;
-    width:min-content;
+    width: fit-content;
     max-width: 72rem;
     z-index: 2;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Lägg till skugga */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
+
 #nav a {
-    color: #333; /* Använd samma textfärg som h2 */
-    border-bottom-color: rgba(247, 232, 213, 0.6); /* Använd samma bakgrundsfärg som sektioner */
+    color: #333; 
+    border-bottom-color: rgba(247, 232, 213, 0.6); 
 }
 
 #nav a:hover {
     border-bottom-color: transparent;
-    color: #c0986b; /* Använd samma accentfärg som skills li */
+    color: #c0986b; 
 }
 
 #nav ul.links {
@@ -210,99 +207,220 @@ footer {
 }
 
 #nav ul.links li a:hover {
-    color: #7c6346;
-    background-color: rgba(255, 255, 255, 0.1); /* Använd samma bakgrundsfärg som skills li */
+    color: #ff8800;
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 
 #nav ul.links li.active {
-    background-color: #f1bd8134; /* Använd samma bakgrundsfärg som header */
+    background-color: #ff88005b; 
 }
 
 #nav ul.links li.active a {
-    color: #333; /* Använd samma textfärg som h2 */
+    color: #333; 
 }
 
 #nav ul.links li.active a:hover {
     color: #333;
 }
 
+/* ---------  Projekt  ------- */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
 
+.posts article header {
+    margin-bottom: 20px;
+}
 
+.posts article h2 a {
+    color: rgb(255, 145, 0); 
+    text-decoration: none; 
+}
 
+.posts article .actions.special li {
+    display: inline-block;
+    margin-right: 10px;
+}
 
+.posts article .actions.special li:last-child {
+    margin-right: 0;
+}
 
+.posts article .actions.special li a.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
 
-/* Featured Post */
+.posts article .actions.special li a.button:hover {
+    background-color: #555;
+}
+
+/* ---------- Featured Post ----------- */
 .post.featured {
-    background-color: #fff; /* Bakgrundsfärg */
-    border-radius: 8px; /* Runda hörn */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skugga */
-    padding: 20px; /* Mellanrum inuti artikeln */
-    margin-bottom: 40px; /* Mellanrum mellan artiklar */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 40px;
 }
 
 .post.featured .major {
-    margin-bottom: 20px; /* Mellanrum mellan rubrik och datum */
-}
-
-.post.featured .date {
-    font-size: 18px; /* Storlek på datum */
-    color: #666; /* Färg på datum */
+    margin-bottom: 20px; 
 }
 
 .post.featured h2 {
-    font-size: 28px; /* Storlek på rubrik */
-    margin-bottom: 10px; /* Mellanrum mellan rubrik och text */
+    font-size: 28px; 
+    margin-bottom: 10px; 
 }
 
 .post.featured p {
-    font-size: 16px; /* Storlek på brödtext */
-    line-height: 1.6; /* Radavstånd */
-    color: #444; /* Färg på brödtext */
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #444; 
 }
 
 .post.featured .actions.special {
-    margin-top: 20px; /* Mellanrum över knappar */
+    margin-top: 20px; 
 }
 
 /* Regular Posts */
 .posts article {
-    background-color: #fff; /* Bakgrundsfärg */
-    border-radius: 8px; /* Runda hörn */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skugga */
-    padding: 20px; /* Mellanrum inuti artikeln */
-    margin-bottom: 40px; /* Mellanrum mellan artiklar */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 40px;
 }
 
 .posts article header {
-    margin-bottom: 20px; /* Mellanrum mellan rubrik och datum */
-}
-
-.posts article .date {
-    font-size: 18px; /* Storlek på datum */
-    color: #666; /* Färg på datum */
+    margin-bottom: 20px; 
 }
 
 .posts article h2 {
-    font-size: 24px; /* Storlek på rubrik */
-    margin-bottom: 10px; /* Mellanrum mellan rubrik och text */
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: orange;
 }
 
 .posts article p {
-    font-size: 16px; /* Storlek på brödtext */
-    line-height: 1.6; /* Radavstånd */
-    color: #444; /* Färg på brödtext */
+    font-size: 16px; 
+    line-height: 1.6;
+    color: #444; 
 }
 
 .posts article .actions.special {
-    margin-top: 20px; /* Mellanrum över knappar */
+    margin-top: 20px; 
 }
 
+/* -------- Bilder i Projekt ------- */
+.post {
+    position: relative;
+}
 
+.post .image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
 
+.post .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.post header {
+    position: relative;
+    z-index: 1;
+}
 
+.post .date {
+    font-size: 18px; 
+    color: #666; 
+    margin-bottom: 1px;
+}
 
+.post h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
 
+/* -------- Modal pop up i -------- */
+.modal-toggle {
+    display: none;
+}
 
+/* Styling för modalen */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
 
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Styla stäng-knappen */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Visa modalen när checkboxen är markerad */
+.modal-toggle:checked + .modal {
+    display: block;
+}
+
+/* Styling för knapparna */
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Lägg till en box runt knappar */
+.button, .close {
+    border: 1px solid #333;
+    box-sizing: border-box; 
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+   /* Stilmall för utskrift */
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 12pt;
+        color: black;
+        background-color: white;
+    }
+
+}

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <header>->
+    <header>
         <div class="header-content">
             <div>
                 <h1>Ermin Husic</h1>
@@ -30,60 +30,106 @@
     </nav>
 
 
-    <!-- Featured Post -->
-        <article class="post featured">
-            <header class="major">
-                <span class="date">Oktober 15, 2023</span>
-                <h2>Slutprojekt i första kursen<br />
-                - bankomaten -</a></h2>
-                <p>Första stora projektet vi byggde i första kursen (Utveckling med C# och .NET).
-                Kodades utan OOP för att få en uppfattning om hur krånglig koden kan bli utan klasser.  -> Alla bilder till projekten är generade med generativ AI - Firefly <-
-                </p>
-            </header>
-            <a href="https://github.com/Ermin-1/Bankomaten.git" class="image main"><img src="images/bankomaten.JPG" alt="" /></a>
-            <ul class="actions special">
-                <li><a href="https://github.com/Ermin-1/Bankomaten.git" class="button large">Visa projekt i github</a></li>
-            </ul>
-        </article>
 
     <!-- Posts -->
-        <section class="posts">
-            <article>
-                <header>
-                    <span class="date">September 24, 2023</span>
-                    <h2><a href="#">Numbers Game<br />
-                    
-                </header>
-                <a href="https://github.com/Ermin-1/NumbersGame.git" class="image fit"><img src="images/numbersgame.JPG" alt="" /></a>
-                <p>Första kursen. Enklare konsolspel där man ska gissa numret från 1-20.</p>
-                <ul class="actions special">
-                    <li><a href="https://github.com/Ermin-1/NumbersGame.git" class="button">visa projekt i github</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date">Oktober 16, 2023</span>
-                    <h2><a href="https://github.com/Ermin-1/Djur-Labb2.git">djur : Klasser</a></h2>
-                </header>
-                <a href="https://github.com/Ermin-1/Djur-Labb2.git" class="image fit"><img src="images/klasser.JPG" alt="" /></a>
-                <p>Andra kursen: Första uppgiften inom klasser. Enklare konsolprogram där klasser ärver av varandra.</p>
-                <ul class="actions special">
-                    <li><a href="https://github.com/Ermin-1/Djur-Labb2.git" class="button">Visa projekt i github</a></li>
-                </ul>
-            </article>
-
-        </section>
+ <section class="posts">
 
 
 
-        
-        <footer>
-            <div class="footer">
-                <p>&copy; 2024</p>
-            </div>
-
-        </footer>
-        
+<!-- Bankomaten -->
+<article class="post">
+    <span class="date">Oktober 15, 2023</span>
+    <h2>Bankomaten</h2>
+    <div class="image-wrapper">
+        <a href="https://github.com/Ermin-1/Bankomaten.git" class="image fit"><img src="Image/bankomaten.JPG" alt="" /></a>
     </div>
-</body>
-</html>
+    <p>Slutuppgift i första kursen. Ej OOP.</p>
+    <ul class="actions special">
+        <li><label for="modal-toggle-bankomat" class="button">Mer information</label></li>
+        <li><a href="https://github.com/Ermin-1/Bankomaten.git" class="button">Visa projekt i GitHub</a></li>
+    </ul>
+</article>
+<input type="checkbox" id="modal-toggle-bankomat" class="modal-toggle">
+
+<!-- Modal Popup -->
+<div class="modal">
+    <div class="modal-content">
+        <label for="modal-toggle-bankomat" class="close">&times;</label>
+        <h2>Mer information om projektet: Bankomaten</h2>
+        <p>Det här är en enkel konsolapplikation för en bankomat. Programmet hanterar fem olika användare, deras pinkoder och bankkonton med saldon. 
+        Användare kan logga in, se sina konton och saldon, föra över pengar mellan konton, ta ut pengar och logga ut.</p> 
+    </div>
+</div>
+
+<!-- Numbers game -->
+<article class="post">
+    <span class="date">September 24, 2023</span>
+    <h2>Numbers Game</h2>
+    <div class="image-wrapper">
+        <a href="https://github.com/Ermin-1/NumbersGame.git" class="image fit"><img src="Image/numbersgame.JPG" alt="" /></a>
+    </div>
+    <p>Första kursen. Enklare konsolspel där man ska gissa numret från 1-20.</p>
+    <ul class="actions special">
+        <li><label for="modal-toggle-numbersgame" class="button">Mer information</label></li>
+        <li><a href="https://github.com/Ermin-1/NumbersGame.git" class="button">Visa projekt i GitHub</a></li>
+    </ul>
+</article>
+<input type="checkbox" id="modal-toggle-numbersgame" class="modal-toggle">
+
+<!-- Modal Popup -->
+<div class="modal">
+    <div class="modal-content">
+        <label for="modal-toggle-numbersgame" class="close">&times;</label>
+        <h2>Mer information om projektet: Numbers Game</h2>
+        <p>Första kursen introducerar elever till grunderna i programmering genom en serie enklare konsolspel. 
+        Ett av dessa spel är en nummergissningslek där spelaren uppmanas att gissa ett nummer mellan 1 och 20. 
+        Genom att interagera med spelet får eleverna praktisk erfarenhet av att använda grundläggande programmeringskoncept som variabler, 
+        villkorssatser och användarinmatning. Denna uppgift syftar till att bygga en solid grund för att förstå mer komplexa koncept och algoritmer som kommer senare i kursen. 
+        Genom att göra lektionerna interaktiva och roliga stimuleras elevernas intresse och engagemang för ämnet, vilket är avgörande för deras framsteg och inlärning.</p>
+    </div>
+</div>
+
+
+
+
+
+
+<!--Djur klasser-->
+<article class="post">
+    <span class="date">Oktober 16, 2023</span>
+    <h2>Djur: Klasser</h2>
+    <div class="image-wrapper">
+        <a href="https://github.com/Ermin-1/Djur-Labb2.git" class="image fit"><img src="Image/klasser.JPG" alt="" /></a>
+    </div>
+    <p>Andra kursen: Första uppgiften inom klasser. Enklare konsolprogram där klasser ärver av varandra.</p>
+    <ul class="actions special">
+        <li><label for="modal-toggle-djurklasser" class="button">Mer information</label></li>
+        <li><a href="https://github.com/Ermin-1/Djur-Labb2.git" class="button">Visa projekt i GitHub</a></li>
+    </ul>
+</article>
+<input type="checkbox" id="modal-toggle-djurklasser" class="modal-toggle">
+
+<!-- Modal Popup -->
+<div class="modal">
+    <div class="modal-content">
+        <label for="modal-toggle-djurklasser" class="close">&times;</label>
+        <h2>Mer information om projektet: Djur Klasser</h2>
+        <p>
+            Andra kursen introducerar elever till koncepten med objektorienterad programmering genom att utforska användningen av klasser. Den första uppgiften inom kursen fokuserar på att implementera klasser och utforska konceptet med arv. Eleverna utmanas att skapa ett enklare konsolprogram där olika klasser ärver egenskaper och metoder från varandra. 
+        </p>
+    </div>
+</div>
+
+
+
+<footer>
+        <div class="footer">
+        <p>&copy; 2024 - All rights reserved</p>
+        </div>
+    
+</footer>
+            
+        </div>
+    </body>
+     </html>
+    
