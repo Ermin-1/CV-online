@@ -58,6 +58,40 @@
                 </p> 
             </section>
             
+<!-- Easter eggs -->
+<div>
+    <!-- Modal-popup -->
+    <div id="eastereggModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Jag vet att jag är pro, du behöver inte skriva det! Stäng nu ner denna sidan och fokusera på min hemsida!</p>
+        </div>
+    </div>
+>
+    <script>
+        // modal
+        let keySequence = '';
+        const eastereggModal = document.getElementById('eastereggModal');
+        document.addEventListener('keydown', function(event) {
+            keySequence += event.key;
+            if (keySequence === '1337') {
+                eastereggModal.style.display = 'block';
+            }
+        });
+
+        document.querySelector('.close').addEventListener('click', function() {
+            eastereggModal.style.display = 'none';
+        });
+
+        // background
+        const portrait = document.querySelector('.portrait img');
+        portrait.addEventListener('click', function() {
+            document.body.style.backgroundColor = 'orange';
+        });
+    </script> 
+</div>
+
+            
             <footer>
                 <div class="footer">
                     <p>&copy; 2024 - All rights reserved</p>
