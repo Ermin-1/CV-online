@@ -161,12 +161,13 @@ footer {
     
     overflow: hidden;
     padding: 0 0.1rem 0 0;
-    width: fit-content;
+    width: max-content; /* Use max-content instead of fit-content */
     max-width: 72rem;
     z-index: 2;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
+
 
 
 #nav a {
